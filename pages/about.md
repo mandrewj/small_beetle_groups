@@ -1,8 +1,8 @@
 ---
 title: About
-contact_email: user@example.com
+contact_email: ajohnston[at]asu.edu
 copyright: All content is CC 0 so that it maybe be shared throughout the world in places like Wikipedia.
-citation: Project collaborative. 2022. Website title. Available at https://example.com. 
+citation: Gimmel, M.L., Johnston, M.A., Schnepp, K., & G. Powell. 2022. Small Beetle Groups Catalog. Available at [https://mandrewj.github.io/small_beetle_groups)](https://mandrewj.github.io/small_beetle_groups). 
 ---
 
 # {{frontmatter.title}}
@@ -10,17 +10,17 @@ citation: Project collaborative. 2022. Website title. Available at https://examp
 ## Dig deeper
 Please contact us if you need extended access to the data underlying here. The TaxonWorks interfaces used to curate these data include wide range of additional filtering, reporting, and curatorial functionality. With a little training from us we'd be happy to provide you access to this additional functionality. Over time we expect this site to gradually mirror that extended functionality.
 
-## Contact
-If you have a question, want to report new data relevant to the project, or have error our preferred means of contact is to file an issue on our [project tracker](https://github.com/our/project/tracker). You can also [chat live with us](https://slackservername). We can also be reached via [email](mailto:{{frontmatter.contact_email}}).   
+This project is funded and made possible by the Species File Group award for the Catalog of Life Small Beetle Groups project.
+
 
 ## Team
  _Please contact us if you would like to join this effort._
 
-Made possible by the wonderful:
-* Gandalf - Technical lead
-* Aragorn - Outside advisor 
-* Frodo - Lead curator
-* Samwise - Emotional support
+
+*[ Matthew L. Gimmel](https://www.researchgate.net/profile/Matthew-Gimmel) - PI
+* [M. Andrew Johnston](https://www.researchgate.net/profile/M-Andrew-Johnston) - Co-PI
+* [Garreth Powell](https://www.researchgate.net/profile/Gareth-Powell-2) - Co-PI
+* [Kyle Schnepp](https://www.researchgate.net/profile/Kyle-Schnepp) - Co-PI
 
 ## Citing
 * This website - {{frontmatter.citation}}
