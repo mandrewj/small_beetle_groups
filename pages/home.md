@@ -1,9 +1,10 @@
 ---
-title: The title
+title: Kojun's Tenebrionidae
 lead: Taxa from your imagination to the web
-project: Your project
+project: Kojun's Tenebrionidae
 ---
    
+ 
 # {{frontmatter.title}}
 _{{frontmatter.lead}}_
 
