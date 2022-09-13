@@ -2,7 +2,7 @@
 title: About
 contact_email: ajohnston[at]asu.edu
 copyright: All content is CC 0 so that it maybe be shared throughout the world in places like Wikipedia.
-citation: Gimmel, M.L., Johnston, M.A., Schnepp, K., & G. Powell. 2022. Small Beetle Groups Catalog. Available at [https://mandrewj.github.io/small_beetle_groups)](https://mandrewj.github.io/small_beetle_groups). 
+citation: Gimmel, M.L., Johnston, M.A., Schnepp, K., & G. Powell. 2022. Small Beetle Groups Catalog. Available at https://mandrewj.github.io/small_beetle_groups. 
 ---
 
 # {{frontmatter.title}}
