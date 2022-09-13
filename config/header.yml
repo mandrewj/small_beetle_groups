@@ -2,6 +2,9 @@
   header_logo_url:
   header_logo_text: Small Beetle Groups Catalog
   header_links:
+    - label: Browse Catalog
+      link: /#/otus/665792/overview
+  
     - label: Home
       link: /
 
