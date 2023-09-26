@@ -1,5 +1,5 @@
 <template>
-  <VCard>
+  <VCard v-if="contents.length">
     <ContentTopic
       v-for="(text, title) in contentList"
       :key="title"
@@ -10,20 +10,22 @@
 </template>
 
 <script setup>
-import { computed, ref, watch } from 'vue'
+import { computed, ref, onBeforeMount, onBeforeUnmount } from 'vue'
+import { useOtuPageRequest } from '@/modules/otus/helpers/useOtuPageRequest'
 import TaxonWorks from '../../../services/TaxonWorks'
 import ContentTopic from './PanelContentTopic.vue'
 
 const props = defineProps({
   otuId: {
     type: Number,
-    default: undefined
+    required: true
   }
 })
 
 const contents = ref([])
+const controller = new AbortController()
 
-const contentList = computed(() => 
+const contentList = computed(() =>
   contents.value.reduce((acc, current) => {
     if (acc[current.name]) {
       acc[current.name].push(current.text)
@@ -35,18 +37,22 @@ const contentList = computed(() =>
   }, {})
 )
 
-watch(
-  () => props.otuId,
-  id => {
-    if (id) {
-      TaxonWorks.getOtuContent(id).then(({ data }) => {
-        contents.value = data
-      })
-    } else {
-      contents.value = []
-    }
-  },
-  { immediate: true }
-)
+onBeforeMount(() => {
+  useOtuPageRequest('panel:content', () =>
+    TaxonWorks.getOtuContent(props.otuId, {
+      params: {
+        extend: ['depiction']
+      },
+      signal: controller.signal
+    })
+  )
+    .then(({ data }) => {
+      contents.value = data
+    })
+    .catch((e) => {})
+})
 
+onBeforeUnmount(() => {
+  controller.abort()
+})
 </script>

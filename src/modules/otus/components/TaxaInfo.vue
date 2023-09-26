@@ -1,38 +1,32 @@
 <template>
-  <div :class="{ invisible: !taxon.id }">
+  <div>
     <h2 class="text-1xl capitalize">
-      {{ taxon.rank || taxon.type }}
+      {{ store.taxon.rank || 'Combination' }}
     </h2>
     <h1 class="text-xl dark:text-gray-100">
-      <span v-html="taxonNameString" />
+      <span>
+        <span
+          :title="store.taxon.short_status"
+          v-html="store.taxon.full_name_tag"
+        />
+        <span
+          v-if="!store.taxon.is_valid"
+          class="ml-1 text-red-600"
+          title="Invalid"
+        >
+          &#10005;
+        </span>
+      </span>
     </h1>
     <h2 class="text-1xl">
-      <CommonNames :otu-id="props.otuId" />
+      <CommonNames />
     </h2>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { useOtuStore } from '../store/store'
 import CommonNames from './CommonNames.vue'
 
-const props = defineProps({
-  taxon: {
-    type: Object,
-    default: () => {}
-  },
-
-  otuId: {
-    type: Number,
-    default: undefined
-  }
-})
-
-const isValid = computed(() => props.taxon.id === props.taxon.cached_valid_taxon_name_id)
-
-const taxonNameString = computed(() => 
-  isValid.value
-    ? props.taxon.cached_html + ' ' + (props.taxon.cached_author_year || '')
-    : props.taxon.original_combination
-)
+const store = useOtuStore()
 </script>

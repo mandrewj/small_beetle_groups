@@ -1,7 +1,5 @@
-import L from 'leaflet'
-
-export const TypeMaterial = L.divIcon({
-  className: 'bg-map-type-material bg-opacity-50 rounded-full',
+export const TypeMaterial = {
+  className: 'bg-map-type-material map-point-marker rounded-full',
   iconSize: [8, 8],
   iconAnchor: [4, 4]
-})
+}

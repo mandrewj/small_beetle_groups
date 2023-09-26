@@ -1,20 +1,39 @@
-import { createApp } from 'vue'
+import.meta.glob('@/assets/css/main.css', { eager: true })
+import.meta.glob('../config/style/*.{scss,css}', { eager: true })
+
 import App from './App.vue'
-import SetupApp from './modules/setup/views/Index.vue'
-import router from '@/router/index.js'
-import globalComponents from '@/components/globalComponents'
-import.meta.globEager('@/assets/css/main.css')
-import.meta.globEager('../config/style/*.{scss,css}')
+import SetupApp from '@/modules/setup/views/Index.vue'
+import { schemaOrgPlugin } from '@/plugins/schemaOrg'
+import { createHead } from 'unhead'
+import { createPinia } from 'pinia'
+import { createSSRApp } from 'vue'
+import { createRouter } from './router'
 
-const isAPIConfigurationSet = __APP_ENV__.url && __APP_ENV__.project_token
-let app
+export function createApp({ originUrl }) {
+  const { url, project_token } = __APP_ENV__
+  const isAPIConfigurationSet = url && project_token
+  const app = createSSRApp(isAPIConfigurationSet ? App : SetupApp)
+  const router = createRouter()
+  const store = createPinia()
+  const head = createHead({
+    plugins: [
+      schemaOrgPlugin(
+        {
+          host: originUrl
+        },
+        () => {
+          const route = router.currentRoute.value
+          return {
+            path: route.path,
+            ...route.meta
+          }
+        }
+      )
+    ]
+  })
 
-if (isAPIConfigurationSet) {
-  app = createApp(App)
   app.use(router)
-  globalComponents.register(app)
-} else {
-  app = createApp(SetupApp)
-}
+  app.use(store)
 
-app.mount('#app')
+  return { app, router, store }
+}

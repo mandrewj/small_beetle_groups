@@ -1,7 +1,5 @@
-import L from 'leaflet'
-
-export const Georeference = L.divIcon({
-  className: 'bg-map-georeference bg-opacity-50 rounded-full',
+export const Georeference = {
+  className: 'bg-map-georeference rounded-full map-point-marker',
   iconSize: [8, 8],
   iconAnchor: [4, 4]
-})
+}

@@ -1,29 +1,26 @@
 <template>
-  <div>
-    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-      <div class="grid grid-cols-1 gap-3 auto-rows-min">
+  <div class="grid gap-3">
+    <div
+      v-for="(row, index) in overviewLayout"
+      class="grid grid-cols-1 gap-3"
+      :class="[columnClasses[row.length]]"
+    >
+      <div
+        v-for="(column, index) in row"
+        class="grid grid-cols-1 gap-3 auto-rows-min"
+        :key="index"
+      >
         <template
-          v-for="({ component, available }) in overviewLayout.left"
-          :key="component"
+          v-for="{ component, available, id } in column"
+          :key="id"
         >
           <component
             :is="component"
             v-if="!available || isComponentForRank(available, taxonRank)"
             :otu-id="otuId"
+            :otu="otu"
             :taxon-id="taxonId"
-          />
-        </template>
-      </div>
-      <div class="grid grid-cols-1 auto-rows-min gap-3">
-        <template
-          v-for="({ component, available }) in overviewLayout.right"
-          :key="component"
-        >
-          <component
-            :is="component"
-            v-if="!available || isComponentForRank(available, taxonRank)"
-            :otu-id="otuId"
-            :taxon-id="taxonId"
+            :taxon="taxon"
           />
         </template>
       </div>
@@ -32,6 +29,7 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { overviewLayout } from '../constants/overviewLayout'
 
 defineProps({
@@ -48,9 +46,26 @@ defineProps({
   otuId: {
     type: [Number, String],
     required: true
+  },
+
+  otu: {
+    type: Object,
+    required: true
+  },
+
+  taxon: {
+    type: Object,
+    required: true
   }
 })
 
-const isComponentForRank = (available, rankString) => available.some(rankGroup => rankString?.includes(rankGroup))
+const columnClasses = {
+  1: ['md:grid-cols-1'],
+  2: ['md:grid-cols-2'],
+  3: ['md:grid-cols-3']
+}
 
+function isComponentForRank(available, rankString) {
+  return available.some((rankGroup) => rankString?.includes(rankGroup))
+}
 </script>
