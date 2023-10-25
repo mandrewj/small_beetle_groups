@@ -2,8 +2,8 @@
   header_logo_url:
   header_logo_text: Anthribidae of the World
   header_links:
-    - label: Home
-      link: /
+    - label: Browse Catalog
+      link: /otus/809412/overview
 
     - label: About
       link: /about
