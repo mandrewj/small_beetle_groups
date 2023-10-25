@@ -1,7 +1,7 @@
 ---
-title: The title
-lead: Taxa from your imagination to the web
-project: Your project
+title: Anthribidae of the World
+lead: Virtual catalogue of fugus weevil species
+project: Anthribidae of the World
 ---
    
 # {{frontmatter.title}}
