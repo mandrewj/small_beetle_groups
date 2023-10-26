@@ -22,7 +22,7 @@ Welcome to **Anthribidae of the World Online**, a virtual catalog that aims to f
 
 ## Curators
 
-* [K. Samanta Orellana](isearch.asu.edu/profile/3433157) [ORCID [0000-0002-4098-5823](https://orcid.org/0000-0002-4098-5823)], Evolutionary Biology Ph.D. Candidate, Biodiversity Knowledge Integration Center, Arizona State University.
+* K. Samanta Orellana ([ORCID](https://orcid.org/0000-0002-4098-5823), [Bionomia](https://bionomia.net/0000-0002-4098-5823)), Evolutionary Biology Ph.D. Candidate, Biodiversity Knowledge Integration Center, Arizona State University.
 
 ## Announcements
 * 10/25/2023 - Our website is live!
