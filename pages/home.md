@@ -4,7 +4,7 @@ layout: blank
 <GalleryCarousel :depiction-id= "[879423]" height="500px">
   <div class="flex flex-col justify-center items-center w-full h-full bg-black bg-opacity-25 text-white gap-4 px-4 box-border">
     <span class="text-4xl font-medium">{{ app:project_name }}</span>
-    <p class="text-lg sm:text-xl">A airtual catalog of fungus weevil species</p>
+    <p class="text-lg sm:text-xl">A virtual catalog of fungus weevil species</p>
     <div class="mx-auto flex flex-col items-center mt-6 sm:mt-10 w-full ">
       <autocomplete-otu class="w-full sm:w-96 text-base-content ml-2 sm:ml-0" placeholder="Search by taxon name" autofocus/>
     </em>
