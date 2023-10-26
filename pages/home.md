@@ -18,10 +18,14 @@ layout: blank
 _{{frontmatter.lead}}_
 
 ## Overview
-Welcome to *{{ frontmatter.project }}*, a website of taxon pages generated from the {{ frontmatter.project }} Project managed in [TaxonWorks](https://taxonworks.org). Records and images are obtained from various sources including active digitization of the [ASU Biocollections](https://sols.asu.edu/research/natural-history-collections) on [ecdysis](https://ecdysis.org), as well as occurrences mobilized to [GBIF](https://gbif.org) by several institutions. 
+Welcome to **Anthribidae of the World Online**, a virtual catalog that aims to facilitate the search of fungus weevil taxa. The taxonomic database is actively fed in [TaxonWorks](https://taxonworks.org) following specialized scientific literature. Most specimen records and images are the product of the curation, identification, imaging and digitization of Anthribidae in the O'Brien Collection (at Arizona State University) on the [ecdysis](https://ecdysis.org) Symbiota portal. Additional records and images are obtained from various sources including literature and occurrences shared on [GBIF](https://gbif.org) by several institutions. 
 
-## Search Anthribidae
-<autocomplete-otu class="w-80"/>
+## Curators
+
+* K. Samanta Orellana, Evolutionary Biology Ph.D. Candidate, Biodiversity Knowledge Integration Center, Arizona State University.
 
 ## Announcements
 * 10/25/2023 - Our website is live!
+
+## Contact us!
+Learn how to collaborate with the Anthribidae of the World Online project. Contact information, technical details, and more are available at [About](/about).
