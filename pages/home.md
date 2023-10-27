@@ -18,7 +18,7 @@ layout: blank
 _{{frontmatter.lead}}_
 
 ## Overview
-Welcome to **Anthribidae of the World Online**, a virtual catalog that aims to facilitate the search of fungus weevil taxa. The taxonomic database is actively fed in [TaxonWorks](https://taxonworks.org) following specialized scientific literature. Most specimen records and images are the product of the curation, identification, imaging and digitization of Anthribidae in the [ASU O'Brien Collection](https://ecdysis.org/collections/misc/collprofiles.php?collid=2) on the [ecdysis](https://ecdysis.org) Symbiota portal. Additional records and images are obtained from various sources including literature and occurrences shared on [GBIF](https://gbif.org) by several institutions. 
+Welcome to **Anthribidae of the World Online**, a virtual catalog that aims to facilitate the search of fungus weevil taxa. The taxonomic database is actively fed on [TaxonWorks](https://taxonworks.org) following specialized scientific literature. Most specimen records and images are the product of the curation, identification, imaging and digitization of Anthribidae in the [ASU O'Brien Collection](https://ecdysis.org/collections/misc/collprofiles.php?collid=2) on the [ecdysis](https://ecdysis.org) Symbiota portal. Additional records and images are obtained from various sources including literature and occurrences shared on [GBIF](https://gbif.org) by several institutions. 
 
 ## Curators
 
@@ -28,11 +28,11 @@ Welcome to **Anthribidae of the World Online**, a virtual catalog that aims to f
 
 The following collections have facilitated access to Anthribidae specimens:
 
-* **ASUCOB**  O'Brien Collection, Arizona State University, USA [Dr. Sangmi Lee, Dr. Nico Franz]
-* **ASUHIC**  Hasbrouck Insect Collection, Arizona State University, USA [Dr. Sangmi Lee, Dr. Nico Franz]
-* **KUNHM**   Kansas University Natural Histroy Museum, USA [Dr. Zack Falin]
-*  **NZAC**   New Zealand Arthropod Collection, New Zealand [Dr. Richard Leschen]
-*  **AMNH**   American Museum of Natural History, USA [Dr. Lee Herman]
+* **ASUCOB**  O'Brien Collection, Arizona State University, USA (Dr. Sangmi Lee, Dr. Nico Franz)
+* **ASUHIC**  Hasbrouck Insect Collection, Arizona State University, USA (Dr. Sangmi Lee, Dr. Nico Franz)
+* **KUNHM**   Kansas University Natural Histroy Museum, USA (Dr. Zack Falin)
+*  **NZAC**   New Zealand Arthropod Collection, New Zealand (Dr. Richard Leschen, Grace Hall)
+*  **AMNH**   American Museum of Natural History, USA (Dr. Lee Herman)
 
 ## Announcements
 * 10/25/2023 - Our website is live!
