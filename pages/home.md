@@ -35,7 +35,7 @@ The following collections have facilitated access to Anthribidae specimens:
 *  **AMNH**   American Museum of Natural History, USA (Dr. Lee Herman)
 
 ## Announcements
-* 11/29/2023 - This resource is a work in progress! Current focus is on Neotropical species and type genera of the different tribes. Complete genera: **_Eugonodes_** Jordan, **_Eugonus_** Schoenherr, **_Phaenithon_** Schoenherr, **_Corrhecerus_** Schoenherr, **_Nemotrichus_** Labram & Imhoff, **_Eucyclotropis_** Jordan, **_Discotenes_** Labram & Imhoff, **_Eucyclotropis_** Jordan, **_Trachytropis_** Jordan.
+* 11/29/2023 - This resource is a work in progress! Current focus is on Neotropical species and type genera of the different tribes. Complete genera: **_Eugonodes_** Jordan, **_Eugonus_** Schoenherr, **_Phaenithon_** Schoenherr, **_Corrhecerus_** Schoenherr, **_Nemotrichus_** Labram & Imhoff, **_Discotenes_** Labram & Imhoff, **_Eucyclotropis_** Jordan, **_Trachytropis_** Jordan.
 * 10/25/2023 - Our website is live!
 
 ## Contact us!
