@@ -13,6 +13,7 @@ layout: blank
 </GalleryCarousel>    
 
 <div class="container mx-auto my-8 px-4 md:px-0 box-border">
+![ASUCOB0041149_dorsal2 copy](https://github.com/anthribidae/species/assets/69399374/2af588e7-946b-4920-b751-a472880d5ca5)
   
 # {{frontmatter.title}}
 _{{frontmatter.lead}}_
