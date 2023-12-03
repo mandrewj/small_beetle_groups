@@ -13,10 +13,11 @@ layout: blank
 </GalleryCarousel>    
 
 <div class="container mx-auto my-8 px-4 md:px-0 box-border">
-![ASUCOB0041149_dorsal2 copy](https://github.com/anthribidae/species/assets/69399374/2af588e7-946b-4920-b751-a472880d5ca5)
   
 # {{frontmatter.title}}
 _{{frontmatter.lead}}_
+
+![ASUCOB0041149_dorsal2 copy](https://github.com/anthribidae/species/assets/69399374/2af588e7-946b-4920-b751-a472880d5ca5)
 
 ## Overview
 Welcome to **Anthribidae of the World Online**, a virtual catalog that aims to facilitate the search of fungus weevil taxa. The taxonomic database is actively fed on [TaxonWorks](https://taxonworks.org) following specialized scientific literature. Most specimen records and images are the product of the curation, identification, imaging and digitization of Anthribidae in the [ASU O'Brien Collection](https://ecdysis.org/collections/misc/collprofiles.php?collid=2) on the [ecdysis](https://ecdysis.org) Symbiota portal. Additional records and images are obtained from various sources including literature and occurrences shared on [GBIF](https://gbif.org) by several institutions. 
