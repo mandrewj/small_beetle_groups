@@ -2,7 +2,7 @@
 layout: blank
 ---
 <GalleryCarousel :depiction-id= "[1024403]" height="500px">
-  <div class="flex flex-col justify-center items-center w-full h-full bg-black bg-opacity-25 text-white gap-4 px-4 box-border" styl="background-image: url("hypselotropis.jpg");">
+  <div class="flex flex-col justify-center items-center w-full h-full bg-black bg-opacity-25 text-white gap-4 px-4 box-border" style="background-image: url("hypselotropis.jpg");">
     <span class="text-4xl font-medium">{{ app:project_name }}</span>
     <p class="text-lg sm:text-xl">A virtual catalog of fungus weevil species</p>
     <div class="mx-auto flex flex-col items-center mt-6 sm:mt-10 w-full ">
